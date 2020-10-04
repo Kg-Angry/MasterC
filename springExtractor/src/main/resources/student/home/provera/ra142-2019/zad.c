@@ -1,0 +1,56 @@
+// Sanja Petrovic RA142-2019
+
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+	int n, m;
+	int i;
+	double suma = 0;
+	double clan;
+	double broj;	
+	
+	do {
+		printf("Unesite prirodne brojeve n i m u formatu 'n, m' tako da oba broja budu veca od 0 i m bude vece od n.\n");
+		scanf("%d, %d", &n, &m);
+	} while (n<=0 || m<=0 || n>=m);
+	
+	for(i=n; i<=m; i++) {
+		if(i%2==0) { //slucaj kada je broj paran
+			clan = pow(i, 2.0/3);
+			suma += clan;
+		}
+		if(i%2!=0) {//slucaj kada je broj neparan
+			clan = pow(i, 3.0/2);
+			suma -= clan;
+		}
+		if(i==n+2) { //treca iteracija 
+			continue;
+		}
+		
+		if(i==n+3) { //cetvrta iteracija
+			if(suma>10) {
+				printf("[i=%d], trenutna suma = %.2lf\n", i, suma);
+			} else {
+				printf("[i=%d], trenutna suma = %.1lf\n", i, suma);
+			}
+				
+		}
+	}
+	
+	printf("Uneti broj\n");
+	scanf("%lf", &broj);
+	
+	if(suma>broj) {
+		printf("ukupna suma je veca od broja %.3lf\n", broj);
+	} else if (suma == broj) {
+		printf("ukupna suma je jednaka broju %.3lf\n", broj);
+	} else {
+		printf("suma je manja od broja %.3lf\n", broj);
+	}
+	
+	
+	return 0;
+}
+
+

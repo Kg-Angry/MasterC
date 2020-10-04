@@ -1,0 +1,15 @@
+// Ivana Lazarevic RA137-2019
+
+#include <stdio.h>
+#include <math.h>
+int main ()
+
+
+{
+	int n, m;
+		do{
+		
+		printf("Unesite ")
+
+return 0;
+}

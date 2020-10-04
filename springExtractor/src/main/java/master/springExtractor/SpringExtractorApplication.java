@@ -1,0 +1,13 @@
+package master.springExtractor;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringExtractorApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringExtractorApplication.class, args);
+	}
+
+}
