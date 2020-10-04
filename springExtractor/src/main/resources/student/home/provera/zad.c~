@@ -1,0 +1,25 @@
+// Nenad Maricic Ra154-2019
+#include<stdio.h>
+#include<math.h>
+int main () {
+int n,m;
+do {  
+printf("Unesi broj n");
+scanf("%d",&n);
+printf("Unesi broj m");
+scanf("%d",&m);
+}
+while (!(n>0 && m>n));
+int i;
+double sum=0;
+double parnouvecanje;
+for (i=n; i<=m; i++){
+if (i%2==0){
+parnouvecanje=sqrt(i,3);}
+sum=sum+parnouvecanje;
+}
+
+
+
+return 0;
+}

@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Link
+Icon[en_US]=gnome-panel-launcher
+Name[en_US]=Ispitni Materijali
+URL=/mnt/ispitni_materijali
+Name=Ispitni Materijali
+Icon=/usr/share/icons/Humanity/places/48/folder-documents.svg
