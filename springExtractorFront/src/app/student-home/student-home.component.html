@@ -1,0 +1,21 @@
+<!-- Start feature Area -->
+<section class="feature-area section-gap" id="service">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-8 pb-40 header-text">
+        <h1>Rezultati kolokvijuma i ispita</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngFor="let p of pdfs"  class="col-lg-4 col-md-6">
+        <div class="single-feature">
+          <h4><span class="lnr lnr-user" (click)="preuzimanje(p.urlPath)">{{p.name}}</span></h4>
+          <p>
+            Test results
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End feature Area -->

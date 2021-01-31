@@ -1,0 +1,13 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    src="assets/image/C.png"
+      />
+  <a href="/"><span style="color:white">SpringExtractor</span></a>
+    <div class="spacer"></div>
+  <a href="#" *ngIf="korisnik !== null" ><span style="color: white;">{{korisnik.email}}</span></a>
+  <div class="spacer1"></div>
+  <a href="/" *ngIf=" korisnik!== null " (click)="LogOut()"><span style="color: white;">LogOut</span></a>
+</div>
+<router-outlet></router-outlet>

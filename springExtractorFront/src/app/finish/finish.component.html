@@ -1,0 +1,31 @@
+<div class="limiter">
+  <div class="container-login100">
+    <form (submit)="uploadPDFF($event)">
+    <div class="wrap-login100">
+      <div class="login100-pic js-tilt" data-tilt>
+        <div class="upload-btn-wrapper">
+          <button class="customButton" (click)="download()">
+            Download Works
+          </button>
+        </div>
+      </div>
+
+      <div class="login100-pic js-tilt" data-tilt>
+        <div class="upload-btn-wrapper">
+          <button class="customButton">
+            Convert Excel to PDF
+          </button>
+          <input type="file" name="convertPDF" (change)="SelectPDF($event)"/>
+        </div>
+      </div>
+      <div class="login100-pic js-tilt" data-tilt>
+        <button class="customButton1">
+          Submit
+        </button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+
+
